@@ -26,8 +26,6 @@ export async function joinWaitlist(data: WaitlistFormData): Promise<WaitlistResu
   const { error } = await supabase.from('interview_waitlist').insert({
     name: parsed.data.name,
     email: parsed.data.email,
-    eng_level: parsed.data.eng_level,
-    target_co: parsed.data.target_co,
   });
 
   if (error) {
