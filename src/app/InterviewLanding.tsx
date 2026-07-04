@@ -107,8 +107,7 @@ export default function InterviewLanding() {
                   <div className={s.successIcon}>🎉</div>
                   <h3 className={s.successTitle}>You&apos;re on the list!</h3>
                   <p className={s.successText}>
-                    We&apos;ll reach out within 48 hours with your early access details
-                    and a special launch discount.
+                    Check your inbox! We just sent you the &quot;10 FAANG Questions&quot; checklist. We&apos;ll reach out soon with early access details.
                   </p>
                 </motion.div>
               ) : (
@@ -121,7 +120,7 @@ export default function InterviewLanding() {
                 >
                   <h2 className={s.formTitle}>🚀 Get Early Access — Free</h2>
                   <p className={s.formSubtitle}>
-                    Join 340+ engineers on the waitlist. 50% off launch price.
+                    Join the waitlist to get our free checklist: &quot;10 FAANG Questions That Fail Non-Natives&quot;
                   </p>
 
                   {/* Name */}
