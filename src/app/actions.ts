@@ -24,7 +24,7 @@ export interface WaitlistResult {
 export async function joinWaitlist(data: WaitlistFormData): Promise<WaitlistResult> {
   const parsed = WaitlistSchema.safeParse(data);
   if (!parsed.success) {
-    return { success: false, error: parsed.error.errors[0]?.message ?? 'Invalid form data' };
+    return { success: false, error: parsed.error.issues[0]?.message ?? 'Invalid form data' };
   }
 
   const supabase = createServerSupabaseClient();
