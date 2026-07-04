@@ -6,12 +6,6 @@ import { createServerSupabaseClient } from '@/lib/supabase-server';
 const WaitlistSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters').max(100),
   email: z.string().email('Please enter a valid email address'),
-  eng_level: z.enum(['B1 – Intermediate', 'B2 – Upper Intermediate', 'C1 – Advanced'] as const, {
-    error: () => 'Please select your English level',
-  }),
-  target_co: z.enum(['FAANG / Big Tech', 'EU Startup', 'Remote US Startup', 'Other'] as const, {
-    error: () => 'Please select a target company type',
-  }),
 });
 
 export type WaitlistFormData = z.infer<typeof WaitlistSchema>;

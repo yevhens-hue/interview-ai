@@ -12,12 +12,6 @@ import s from '@/app/landing.module.css';
 const schema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters'),
   email: z.string().email('Please enter a valid email address'),
-  eng_level: z.enum(['B1 – Intermediate', 'B2 – Upper Intermediate', 'C1 – Advanced'] as const, {
-    error: () => 'Please select your English level',
-  }),
-  target_co: z.enum(['FAANG / Big Tech', 'EU Startup', 'Remote US Startup', 'Other'] as const, {
-    error: () => 'Please select a target company type',
-  }),
 });
 
 /* ── Animation variants ── */
@@ -154,39 +148,6 @@ export default function InterviewLanding() {
                       className={`${s.input} ${errors.email ? s.inputError : ''}`}
                     />
                     {errors.email && <p className={s.fieldError}>{errors.email.message}</p>}
-                  </div>
-
-                  {/* English Level */}
-                  <div>
-                    <select
-                      {...register('eng_level')}
-                      aria-label="English level"
-                      className={`${s.select} ${errors.eng_level ? s.inputError : ''}`}
-                      defaultValue=""
-                    >
-                      <option value="" disabled>Your English level</option>
-                      <option>B1 – Intermediate</option>
-                      <option>B2 – Upper Intermediate</option>
-                      <option>C1 – Advanced</option>
-                    </select>
-                    {errors.eng_level && <p className={s.fieldError}>{errors.eng_level.message}</p>}
-                  </div>
-
-                  {/* Target Company */}
-                  <div>
-                    <select
-                      {...register('target_co')}
-                      aria-label="Target company type"
-                      className={`${s.select} ${errors.target_co ? s.inputError : ''}`}
-                      defaultValue=""
-                    >
-                      <option value="" disabled>Target company type</option>
-                      <option>FAANG / Big Tech</option>
-                      <option>EU Startup</option>
-                      <option>Remote US Startup</option>
-                      <option>Other</option>
-                    </select>
-                    {errors.target_co && <p className={s.fieldError}>{errors.target_co.message}</p>}
                   </div>
 
                   {/* Server error */}
