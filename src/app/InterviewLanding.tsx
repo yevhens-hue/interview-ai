@@ -107,8 +107,17 @@ export default function InterviewLanding() {
                   <div className={s.successIcon}>🎉</div>
                   <h3 className={s.successTitle}>You&apos;re on the list!</h3>
                   <p className={s.successText}>
-                    Check your inbox! We just sent you the &quot;10 FAANG Questions&quot; checklist. We&apos;ll reach out soon with early access details.
+                    As promised, here is your free checklist. We&apos;ll reach out soon with early access details!
                   </p>
+                  <a
+                    href="https://docs.google.com/document/d/1ZlTytrOCvKTCNWM5UXIbzCzDR5qtDFaLliPfs4EBSUo/edit"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={s.submitBtn}
+                    style={{ marginTop: '16px', display: 'inline-block', textDecoration: 'none' }}
+                  >
+                    📄 Open Checklist
+                  </a>
                 </motion.div>
               ) : (
                 <motion.form
