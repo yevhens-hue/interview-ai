@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useRef } from 'react';
+import Link from 'next/link';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
@@ -103,15 +104,13 @@ export default function InterviewLanding() {
                   <p className={s.successText}>
                     As promised, here is your free checklist. We&apos;ll reach out soon with early access details!
                   </p>
-                  <a
-                    href="https://docs.google.com/document/d/1ZlTytrOCvKTCNWM5UXIbzCzDR5qtDFaLliPfs4EBSUo/edit"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Link
+                    href="/checklist"
                     className={s.submitBtn}
                     style={{ marginTop: '16px', display: 'inline-block', textDecoration: 'none' }}
                   >
-                    📄 Open Checklist
-                  </a>
+                    📄 Open Your Free Checklist →
+                  </Link>
                 </motion.div>
               ) : (
                 <motion.form
