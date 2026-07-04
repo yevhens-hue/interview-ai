@@ -1,7 +1,11 @@
 # PROJECT_MEMORY.md — InterviewAI
 
 ## Статус проекта
-Активная разработка MVP. Лендинг полностью готов к деплою.
+✅ MVP задеплоен на Vercel. Лендинг живой.
+
+**Vercel URL:** https://interview-ai-nine-murex.vercel.app  
+**GitHub:** https://github.com/yevhens-hue/interview-ai  
+⏳ **Supabase:** SQL-миграция ещё не запущена вручную!
 
 ## Контекст (откуда пришли)
 Проект создан как тестовое задание для позиции Product Manager. После AI-скоринга 10 идей (YC-методология) и оценки AI-командой из 5 специалистов, идея **AI Mock Interviewer** была выбрана как победитель.
@@ -70,9 +74,9 @@ git push -u origin main
 После создания GitHub репо — подключить через vercel.com/new. Добавить env vars из `.env.local`.
 
 ## TODO (следующие шаги)
-- [ ] Создать GitHub репо `interview-ai`
-- [ ] Запустить SQL-миграцию в Supabase
-- [ ] Задеплоить на Vercel
+- [x] Создать GitHub репо `interview-ai` → https://github.com/yevhens-hue/interview-ai
+- [ ] Запустить SQL-миграцию в Supabase → https://supabase.com/dashboard/project/kapkqziyceefxluxlvqc/sql/new
+- [x] Задеплоить на Vercel → https://interview-ai-nine-murex.vercel.app
 - [ ] Подключить кастомный домен (interview-ai.com?)
 - [ ] Добавить Posthog аналитику
 - [ ] Написать пункт 3 тестового задания (Первый трафик и гипотеза)
