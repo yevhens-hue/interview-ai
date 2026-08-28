@@ -36,3 +36,6 @@ Connect GitHub repo to Vercel. Add env vars. Deploy.
 
 ## Project context
 See [PROJECT_MEMORY.md](./PROJECT_MEMORY.md) for full product context, ICP, and decision history.
+
+
+<!-- activity-sync: 2026-08-28 -->
