@@ -54,3 +54,6 @@ See [PROJECT_MEMORY.md](./PROJECT_MEMORY.md) for full product context, ICP, and 
 
 
 <!-- activity-sync: 2026-10-10 -->
+
+
+<!-- activity-sync: 2026-10-17 -->
